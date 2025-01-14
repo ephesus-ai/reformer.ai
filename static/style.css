@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --font-color: #162667;
+  --background-color: #F9F9F9;
+  --hover-color: crimson;
+}
+
+body {
+  background-color: var(--background-color);
+
+}
+
+#main {
+  margin: 1rem;
+}
+
+#hamburger {
+  display: none;
+}
+
+a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+p {
+  line-height: 1.7;
+}
+
+table {
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+td {
+  padding-bottom: 0.75rem;
+}
+
+thead {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 24px;
+}
+
+tbody {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--font-color);
+  padding: 0 2rem;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  background-color: var(--background-color);
+  z-index: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Albert Sans", sans-serif;
+  color: var(--font-color);
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  color: var(--font-color);
+
+}
+
+nav p {
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.hl {
+  color: var(--hover-color);
+  font-weight: 600;
+}
+
+nav a {
+  color: var(--font-color);
+  text-decoration: none;
+  border-bottom: 8px solid #0000;
+  border-top: 8px solid #0000;
+  transition: border-color 0.3s ease;
+  /* margin-bottom: -12px; */
+}
+
+nav a:hover {
+  border-bottom: 8px solid var(--font-color);
+  /* border-top: 8px solid var(--font-color); */
+}
+
+#nav-logo {
+  color: var(--font-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#title h1 {
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-size: 64px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#title h2 {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 24px;
+  color: var(--font-color);
+}
+
+#title {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  justify-content: cetner;
+  align-items: center;
+}
+
+#title button {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  color: var(--font-color);
+  border: 2px solid var(--font-color);
+  background: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+#title button:hover {
+  background-color: #16266711;
+  cursor: pointer;
+}
+
+#title-img img {
+  width: 100%;
+  filter: hue-rotate(-20deg);
+}
+
+#title-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+section {
+  padding: 4rem 0;
+  /* border-bottom: 1px solid var(--font-color); */
+}
+
+#faq {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+#faq h1 {
+  font-size: 56px;
+}
+
+#faq .question p {
+  font-size: 20px;
+}
+
+.question {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.question:last-child {
+  border-bottom: none;
+}
+
+section.content-half,
+section.content-left,
+section.content-right {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  gap: 4rem;
+}
+
+section.content-half {
+  grid-template-columns: 1fr 1fr;
+}
+
+section.content-left {
+  grid-template-columns: 3fr 2fr;
+}
+
+section.content-right {
+  grid-template-columns: 2fr 3fr;
+}
+
+section div.image {
+  display: flex;
+  align-items: center;
+}
+
+section div.image img {
+  width: 100%;
+  height: auto;
+}
+
+section div.content h1 {
+  /* text-transform: uppercase; */
+  font-size: 36px;
+}
+
+section div.content p {
+  font-size: 20px;
+}
+
+section.example {
+  max-width: 70rem;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+section.example h1 {
+  font-size: 56px;
+}
+
+section.example div.example-inner {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer {
+  text-align: center;
+  padding: 10rem 0;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 1rem 0;
+  }
+
+  section.example div.example-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem
+  }
+
+  section.example div.example-inner div.image {
+    order: 1;
+  }
+
+  section.content-left,
+  section.content-half,
+  section.content-right {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+
+  section div.content h1 {
+    font-size: 32px;
+  }
+
+  #title-inner {
+    grid-template-columns: 1fr;
+  }
+
+  section.content-right div:nth-of-type(1) {
+    order: 2;
+  }
+
+  section.content-half div:nth-of-type(1) {
+    order: 2;
+  }
+
+  #hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+    margin: 0.5rem;
+    z-index: 99;
+    box-shadow: 5px 5px 20px #3333;
+    border-radius: 100%;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-size: 1.3rem;
+  }
+
+  nav {
+    top: unset;
+    bottom: 0;
+    border-bottom: none;
+    border-top: 1px solid var(--font-color);
+    border-right: 1px solid var(--font-color);
+    box-shadow: 5px 5px 20px #3333;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    display: block;
+    width: auto;
+    border-top-right-radius: 1rem;
+    display: none;
+  }
+
+  nav p {
+    padding: 0.2rem 1rem;
+    /* margin: 1rem; */
+    line-height: 1.5;
+  }
+
+  nav p.sep {
+    display: none;
+  }
+
+  #nav-logo {
+    border-bottom: 1px solid var(--font-color);
+    padding-bottom: 0.75rem;
+  }
+
+  nav a {
+    border: none;
+  }
+
+  nav a:hover {
+    border: none;
+  }
+
+  #title {
+    align-items: flex-start;
+  }
+
+  #title-inner h2 {
+    font-size: 20px;
+  }
+
+  #title-text button {
+    margin: 0 auto;
+  }
+
+  #title-img {
+    display: none;
+  }
+
+  section.example h1 {
+    font-size: 40px;
+  }
+
+  #faq h1 {
+    font-size: 40px;
+  }
+
+  thead {
+    font-size: 16px;
+  }
+
+  tbody {
+    font-size: 12px;
+  }
+}

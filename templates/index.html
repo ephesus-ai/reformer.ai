@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+  {% block head %}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ get_url(path='/norm.css') }}" />
+  <link rel="stylesheet" href="{{ get_url(path='/style.css', cachebust=true) }}" />
+  <meta charset="utf-8" />
+  <title>Reformer</title>
+  {% block rss %}
+  {% endblock %}
+  {% endblock head %}
+</head>
+
+<body>
+  <div id="hamburger">&#x2630;</div>
+  <nav id="nav">
+    <a href="#">
+      <p id="nav-logo">Reformer</p>
+    </a>
+    <p class="sep">//</p>
+    <a href="#features">
+      <p>Features</p>
+    </a>
+    <a href="#ex-health">
+      <p>For Healthcare</p>
+    </a>
+    <a href="#ex-defense">
+      <p>For Defense</p>
+    </a>
+    <a href="#faq">
+      <p>FAQ</p>
+    </a>
+    <a href="signup">
+      <p class="hl">Sign Up</p>
+    </a>
+  </nav>
+
+  <div id="main">
+    <section id="title">
+      <div id="title-inner">
+        <div id="title-text">
+          <h1>Learn Everything.</h1>
+          <h1>Expose Nothing.</h1>
+          <br />
+          <h2>
+            <b>Reformer</b>: Maintain data sovereignty and reveal robust, explainable insights from collective knowledge
+            in an
+            unlimited-scale Bayesian machine learning mesh
+          </h2>
+          <br />
+          <center>
+            <a href="signup"><button>Join the waitlist</button></a>
+          </center>
+        </div>
+        <div id="title-img">
+          <img src="img/space-1.png" />
+        </div>
+      </div>
+    </section>
+
+    <div id="features"></div>
+    <section class="content-right">
+      <div class="image">
+        <img src="img/sharing-3.png" />
+      </div>
+      <div class="content">
+        <h1>Confident Decisions at Scale</h1>
+        <p>
+          Deliver precise, interpretable predictions with rigorous uncertainty quantification at any scale, using exact
+          Bayesian inference across distributed databases without simplifying assumption.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-left">
+      <div class="content">
+        <h1>Share Learning Across Organizations Without Sharing Data</h1>
+        <p>
+          Create an unlimited-scale machine learning mesh across organizations with zero data sharing - not even
+          encrypted data. Each organization's compute remains proportional to their local data size.
+        </p>
+      </div>
+      <div class="image">
+        <img src="img/fleet-1.png" />
+      </div>
+    </section>
+
+    <section class="content-half">
+      <div class="image">
+        <table>
+          <thead>
+            <tr>
+              <td></td>
+              <td>Federated Learning</td>
+              <td>Reformer</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data features can be distributed</td>
+              <td>❌</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Exact inference</td>
+              <td>❌</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Secure without encryption</td>
+              <td>❌</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Answers many questions with one model</td>
+              <td>❌</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Quantifies aleatoric and epistemic uncertainty</td>
+              <td>❌</td>
+              <td>✅</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="content">
+        <h1>Beyond Federated Learning</h1>
+        <p>
+          Federated learning uses black box technology to answer single questions about data whose features must be
+          fully present at the site of computation, and transmits insecure information that can leak private data.
+          Reformer addresses all these issues and more while enabling unprecedented scale.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-right">
+      <div class="image">
+        <img src="img/ship-1.png" />
+      </div>
+
+      <div class="content">
+        <h1>Answer Any Question About Your Data</h1>
+        <p>
+          Learn complete joint distributions that answer any question about your data, enhanced by patterns discovered
+          in partner databases through matching indices - all without seeing their actual records.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-left">
+      <div class="content">
+        <h1>Preserve Your Data Architecture</h1>
+        <p>
+          While traditional AI/ML requires you to flatten your carefully architected relational database and convert
+          your typed data into vectors of floating point numbers, Reformer learns directly from you relational databases
+          as-is, maintaining complex relationships and full interpretability.
+        </p>
+      </div>
+      <div class="image">
+        <img src="img/fleet-1.png" />
+      </div>
+    </section>
+
+    <section id="ex-health" class="example">
+      <h1>For Healthcare</h1>
+      <div class="example-inner">
+        <div class="content">
+          <h2>Securely and fairly unify knowlege across insititions</h2>
+          <p>
+            Healthcare institutions using the same Electronic Medical Record (EMR) system share identical database
+            schemas - creating a perfect opportunity for unified learning without data sharing. Reformer exploits this
+            natural alignment to create a secure mesh across organizations, in which organizations' databases are
+            <b>virtually concatenated</b>, enabling each institution to benefit from insights learned across billions of
+            patient records while computation remains proportional to local data size, democratizing access to advanced
+            healthcare intelligence.
+          </p>
+
+          <br />
+
+          <h2>Identify errors and inconsistencies before they cause harm</h2>
+          <p>
+            In an overwhelmed healthcare system, medical errors remain a leading cause of death while coding
+            errors cost billions. Reformer acts as a real-time error checker, leveraging patterns learned across
+            billions
+            of patient records to instantly flag potential anomalies or mistakes in diagnoses, prescriptions, and coding
+            - catching dangerous errors before they impact patients.
+          </p>
+        </div>
+        <div class="image">
+          <img src="img/health-2.png" />
+        </div>
+      </div>
+    </section>
+
+    <section id="ex-defense" class="example">
+      <h1>For Defense</h1>
+      <div class="example-inner">
+        <div class="content">
+          <h2>Securely eliminate silos</h2>
+          <p>
+            Intelligence silos cost lives. When critical information remains trapped within agencies, we miss vital
+            connections that could prevent threats. Reformer eliminates this deadly compromise by creating a unified
+            intelligence layer across databases that share common identifiers, enabling organizations to detect threat
+            patterns across systems while data remains strictly controlled within security boundaries.
+          </p>
+
+          <br />
+
+          <h2>Acquire new perspective from partner data without observing it</h2>
+          <p>
+            Through Reformer's secure mesh, intelligence organizations with complementary data can discover new
+            relationships in their records based on patterns learned from partner data - without ever seeing the data.
+            For example, when one agency holds entity records and another tracks transaction between entities, both gain
+            powerful new perspectives while their data remains secure within their systems, multiplying intelligence
+            value while maintaining strict operational security and data soverignty.
+          </p>
+        </div>
+        <div class="image">
+          <img src="img/ship-3.png" />
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="question">
+        <p><b>Question:</b> Do we have to join a mesh? Can we use Reformer on just our organizational data?</p>
+        <p><b>Answer:</b> You do not have to join or create a mesh. Reformer's distributed model works just as well
+          within your
+          org, giving you access to expressive and robust Bayesian inference over databases with trillions of records
+        </p>
+      </div>
+
+      <div class="question">
+        <p><b>Question:</b> Is Reformer another pre-trained LLM or foundation model trained on the world of data.</p>
+        <p><b>Answer:</b> No. Reformer is a proprietary Bayesian Machine Learning model that is trained only on your
+          data and the data in the mesh of which you are a member.</p>
+      </div>
+
+      <div class="question">
+        <p><b>Question:</b> How long does training take and how much does it cost?</p>
+        <p>
+          <b>Answer:</b> Training a model on 1 billion records takes about 3 hours on a M4 Mackbook Pro. On the
+          equivalent on-demand AWS machine this would cost less than $4. Training time decreases with the number of
+          machines. Once
+          the initial model is trained only incremental updates are required to add new data and comply with the mesh.
+        </p>
+      </div>
+
+      <div class="question">
+        <p><b>Question:</b> What kind of compute hardware does Reformer require?</p>
+        <p>
+          <b>Answer:</b> Reformer is meant to work on what you have. Reformer targets 64 bit x86 and ARM architecture.
+          No special compute hardware like GPUs or TPUs
+          are
+          required. If your data does not fit in the memory of one machine, it will be distributed to multiple,
+          potentially heterogenous, machines.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2025, <a href="https://redpoll.ai">Redpoll</a></p>
+    </footer>
+
+  </div>
+
+  <script>
+    const icon = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    // Add click handler to icon
+    icon.addEventListener('click', function (e) {
+      e.stopPropagation(); // Prevent click from bubbling to document
+      nav.style.display = 'block';
+      icon.style.display = 'none';
+    });
+
+    // Add click handler to document
+    document.addEventListener('click', function () {
+      if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+        icon.style.display = 'flex';
+      }
+    });
+
+    // Prevent nav clicks from closing itself
+    nav.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  </script>
+</body>
