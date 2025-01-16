@@ -245,11 +245,10 @@
       <div class="question">
         <p><b>Question:</b> How long does training take and how much does it cost?</p>
         <p>
-          <b>Answer:</b> It varies.For example, training a model on a dataset with 1 billion records and 5 columns takes
-          about 3 hours on a M4 Mackbook Pro, which
-          would cost less than $4 on the equivalent on-demand AWS machine. Training time decreases with the number of
-          machines. Only incremental updates are required to add new data and comply with the mesh once the initial
-          model is trained.
+          <b>Answer:</b> It varies. For example, training a model on a dataset with 1 billion records and 5 columns
+          takes about 3 hours on a M4 Mackbook Pro, which would cost less than $4 on the equivalent on-demand AWS
+          machine. Training time decreases with the number of machines. Only incremental updates are required to add new
+          data and comply with the mesh once the initial model is trained.
         </p>
       </div>
 
@@ -286,11 +285,6 @@
         nav.style.display = 'none';
         icon.style.display = 'flex';
       }
-    });
-
-    // Prevent nav clicks from closing itself
-    nav.addEventListener('click', function (e) {
-      e.stopPropagation();
     });
   </script>
 </body>
